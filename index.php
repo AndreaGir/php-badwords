@@ -5,9 +5,7 @@
 
     $lunghezzaParagrafo = strlen( $paragrafo );
 
-    $paragrafoCensurato = str_replace( 'cacca', '***', $paragrafo , $numeroCensure);
-
-    $numeroCensure = 0;
+    $paragrafoCensurato = str_replace( $_GET['pHost'], '***', $paragrafo , $numeroCensure);
 
     $pHost = $_GET['pHost']
 
